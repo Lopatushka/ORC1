@@ -30,6 +30,8 @@ def rename_condition(x):
         return "not provided"
     elif "not provided" in x:
         return "not provided"
+    elif x == "not specified":
+        return "not provided"
     else:
         return x
     
