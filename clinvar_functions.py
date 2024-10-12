@@ -35,11 +35,13 @@ def rename_condition(x):
     
 def mutation_analysis(sb, li):
     '''
-    Input - subset of dataframe, list of position within interval of interest
+    Input - pd.Series with list of mutations to test
     Output - 2 lists of mutations: first - within interval of interest (li); second - outside of interval of interest
     '''
-    sb.dropna(inplace=True)
-    sb = list(sb)
+    sb.dropna(inplace=True) # deleete empty positions in the 
+    sb = list(sb) # convert pd.Series to list
+    sb = [string.split(", ") for string in sb] # split strings with contains several mutaions
+    sb = [item for sublist in sb for item in sublist] # flatten list of lists
     interval_mutations = []
     no_interval_mutations = []
     for mutation in sb:
@@ -49,6 +51,7 @@ def mutation_analysis(sb, li):
                 interval_mutations.append(mutation)
             else:
                 no_interval_mutations.append(mutation)
+    print(f"Total number of mutations is: {len(sb)}")
     print(f"Number of mutations within interaval of interest is {len(interval_mutations)}")
     print(f"Number of mutations outside interaval of interest is {len(no_interval_mutations)}")
     return(interval_mutations, no_interval_mutations)
