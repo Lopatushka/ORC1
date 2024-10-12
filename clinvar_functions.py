@@ -17,7 +17,7 @@ def rename_condition(x):
     if x == 'Meier-Gorlin syndrome 1':
         return x
     elif 'Meier-Gorlin syndrome 1' in x:
-        return "Meier-Gorlin syndrome 1 probaly"
+        return "Meier-Gorlin syndrome 1 probably"
     elif x == 'ORC1-related disorder':
         return x
     elif 'ORC1-related disorder' in x:
