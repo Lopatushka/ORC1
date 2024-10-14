@@ -57,3 +57,11 @@ def mutation_analysis(sb, li):
     print(f"Number of mutations within interaval of interest is {len(interval_mutations)}")
     print(f"Number of mutations outside interaval of interest is {len(no_interval_mutations)}")
     return(interval_mutations, no_interval_mutations)
+
+def percantage_aa(seq, A):
+    length = len(seq)
+    count = 0
+    for aa in seq:
+        if aa == A:
+            count += 1
+    return 100*count/length
