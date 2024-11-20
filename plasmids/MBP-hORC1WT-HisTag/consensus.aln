@@ -1,0 +1,66 @@
+CLUSTAL O(1.2.4) multiple sequence alignment
+
+
+M13_RC_seq      AGGATGTGCTTCCAGCCCTATACATATAGCCAGCTGCAGCAGATCTAAGGTCCCGGCTCA
+ORC1_seq        ------------------------------------------------------------
+                                                                            
+
+M13_RC_seq      AGCATCTAAAGGCCTTTGAAGATGATGCCATCCAGCTGGTAGCCAGGAAGGTAGCAGCAC
+ORC1_seq        ------------------------------------------------------------
+                                                                            
+
+M13_RC_seq      TGTCTGGAGATGCACGACGGTGCCTGGACATCTGCAGGCGTGCCACAGAGATCTGTGAGT
+ORC1_seq        ------------------------------------------------------------
+                                                                            
+
+M13_RC_seq      TCTCCCAGCAGAAGCCTGACTCCCCTGGCCTGGTCACCATAGCCCACTCAATGGAAGCTG
+ORC1_seq        ------------------------------------------------------------
+                                                                            
+
+M13_RC_seq      TGGATGAGATGTTTTCATCATCATACATCACGGCCATCAAAAATTCCTCTGTTCTGGAAC
+ORC1_seq        ------------------------------------------------------------
+                                                                            
+
+M13_RC_seq      AGAGCTTCCTGAGAGCCATCCTCGCAGAGTTCCGTCGATCAGGACTGGAGGAAGCCACGT
+ORC1_seq        -----------------------------------------------GGAGGAGCCACGT
+                                                               *  * ********
+
+M13_RC_seq      TTCAACAGATATATAGTCAACATGTGGCACTGTGCAGAATGGAGGGACTGCCGTACCCCA
+ORC1_seq        TTCAACAGATATATAGTCAACATGTGGCACTGTGCAGAATGGAGGGACTGCCGTACCCCA
+                ************************************************************
+
+M13_RC_seq      CCATGTCAGAGACCATGGCCGTGTGTTCTCACCTGGGCTCCTGTCGCCTCCTGCTTGTGG
+ORC1_seq        CCATGTCAGAGACCATGGCCGTGTGTTCTCACCTGGGCTCCTGTCGCCTCCTGCTTGTGG
+                ************************************************************
+
+M13_RC_seq      AGCCCAGCAGGAACGATCTGCTCCTTCGGGTGCGGCTCAACGTCAGCCAGGATGATGTGC
+ORC1_seq        AGCCCAGCAGGAACGATCTGCTCCTTCGGGTGCGGCTCAACGTCAGCCAGGATGATGTGC
+                ************************************************************
+
+M13_RC_seq      TGTATGCGCTGAAAGACGAGCATCACCATCATCAC-------------------------
+ORC1_seq        TGTATGCGCTGAAAGACGAGCATCACCATCATCACCACTGAGTCGACCTGCAGGCAAGCT
+                ***********************************                         
+
+M13_RC_seq      ------------------------------------------------------------
+ORC1_seq        TGGCACTGGCCGTCGTTTTACAACGTCGTGACTGGGAAAACCCTGGCGTTACCCAACTTA
+                                                                            
+
+M13_RC_seq      ------------------------------------------------------------
+ORC1_seq        ATCGCCTTGCAGCACATCCCCCTTTCGCCAGCTGGCGTAATAGCGAAGAGGCCCGCACCG
+                                                                            
+
+M13_RC_seq      ------------------------------------------------------------
+ORC1_seq        ATCGCCCTTCCCAACAGTTGCGCAGCCTGAATGGCGAATGGCAGCTTGGCTGTTTTGGCG
+                                                                            
+
+M13_RC_seq      ------------------------------------------------------------
+ORC1_seq        GATGAGATAAGATTTTCAGCCTGATACAGATTAAATCAGAACGCAGAAGCGGTCTGATAA
+                                                                            
+
+M13_RC_seq      ------------------------------------------------------------
+ORC1_seq        AACAGAATTTGCCTGGCGGCAGTAGCGCGGTGGTCCCACCTGACCCCATGCCGAACTCAG
+                                                                            
+
+M13_RC_seq      ---------------------------------
+ORC1_seq        AAGTGAAACGCCGTAGCGCCGATGGTAGTGTGG
+                                                 
