@@ -35,6 +35,32 @@ def rename_condition(x):
     else:
         return x
     
+def create_mutation_dict(df):
+    """
+    Creates a list of dictionaries representing protein mutations with their positions and labels.
+
+    Args:
+        df (pd.DataFrame): DataFrame containing a column "Protein change" with mutation information.
+
+    Returns:
+        List[dict]: A list of dictionaries, each containing:
+            - "position" (int): The numeric position of the mutation in the protein sequence.
+            - "label" (str): The full mutation label (e.g., "R846W").
+    """
+    # List of prtein mutations. Drop NAs
+    mutations = list(df["Protein change"].dropna())
+    print(f"Number of variats is", len(mutations))
+
+    # Split each string into separate mutations and flatten the list
+    mutations_names = [mutation.strip() for group in mutations for mutation in group.split(',')]
+
+    # Create a list of dictionaries with position and label
+    mutations_with_labels = [
+        {"position": int(re.findall(r'\d+', mutation)[0]), "label": mutation}
+        for mutation in mutations_names
+    ]
+    return mutations_with_labels
+    
 def mutation_analysis(sb, li):
     '''
     Input - pd.Series with list of mutations to test
