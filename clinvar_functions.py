@@ -35,6 +35,29 @@ def rename_condition(x):
     else:
         return x
     
+# Define a function to handle ranges or invalid entries
+def parse_location(value):
+    try:
+        # Check for a range and calculate the midpoint
+        if isinstance(value, str) and '-' in value:
+            start, end = map(int, value.split('-'))
+            return end  # Return the midpoint
+        # Convert single values to integer
+        return int(value)
+    except (ValueError, TypeError):
+        # Return None for invalid values
+        return None
+
+# Define the function with try-except logic
+def adjust_location(value, adjustment):
+    try:
+        # Subtract adjustment from the value
+        return value - adjustment
+    except Exception as e:
+        # Handle exceptions (e.g., log or return a default value)
+        print(f"Error processing value {value}: {e}")
+        return None  # Return None or another default value
+    
 def create_mutation_dict(df):
     """
     Creates a list of dictionaries representing protein mutations with their positions and labels.
