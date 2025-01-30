@@ -35,6 +35,7 @@ def rename_condition(x):
     else:
         return x
     
+    
 # Define a function to handle ranges or invalid entries
 def parse_location(value):
     try:
@@ -114,3 +115,52 @@ def percantage_aa(seq, A):
         if aa == A:
             count += 1
     return 100*count/length
+
+# Big clinvar dataset
+def rename_condition_2(x):
+    '''
+    Input: pd.Series
+    Output: pd.Series
+    '''
+    if x == 'Meier-Gorlin_syndrome':
+        return 'Meier-Gorlin_syndrome_1'
+    
+    if x == 'Meier-Gorlin_syndrome_1':
+        return x
+    elif 'Meier-Gorlin_syndrome_1' in x:
+        return "Meier-Gorlin_syndrome_1_probably"
+    elif x == 'ORC1-related_disorder':
+        return x
+    elif 'ORC1-related_disorder' in x:
+        return 'ORC1-related_disorder_probably'
+    elif x == "Inborn_genetic_diseases":
+        return x
+    elif 'Inborn_genetic_diseases' in x:
+        return 'Inborn_genetic_diseases_probably'
+    elif x == "not_provided":
+        return "not_provided"
+    elif "not_provided" in x:
+        return "not_provided"
+    elif x == "not_specified":
+        return "not_provided"
+    else:
+        return x
+    
+# Functions for data cleaning
+def convert_to_str(x):
+    if x is not None:
+        return x[0]
+    return 'not_specified'
+
+def second_element(x):
+    li = list(x)
+    if len(li) == 2:
+        return li[1][1:]
+    return 'not_specified'
+
+def split_row(row):
+    try:
+        return row.split("|")[1]
+    except:
+        return row
+    
